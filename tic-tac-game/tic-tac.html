@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Henny+Penny&family=Lato:wght@300;400&family=Lobster&family=Open+Sans&family=Oswald:wght@400;700&family=Paytone+One&family=Permanent+Marker&family=Righteous&family=Roboto:ital,wght@0,300;0,400;1,400&family=Rubik+80s+Fade&family=Rubik+Distressed&family=Rubik+Microbe&family=Secular+One&family=Ubuntu&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Henny+Penny&family=Lato:wght@300;400&family=Lobster&family=Open+Sans&family=Oswald:wght@400;700&family=Paytone+One&family=Permanent+Marker&family=Righteous&family=Roboto&family=Rubik+80s+Fade&family=Rubik+Distressed&family=Rubik+Microbe&family=Secular+One&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>tic-tac</title>
+</head>
+<body>
+    <div class="full-screen">
+        <div class="screen-size">
+            <div class="tic-tac-heading">
+                <h1 id="tic-tac-name">Tic-Tac<span> (Back Our School Life)</span></h1>
+            </div>
+            <div class="game-container">
+                
+                <div class="container">
+                    
+                    <div class="box border-top border-left"><span class="box-text"></span></div>
+                    <div class="box border-top"><span class="box-text"></span></div>
+                    <div class="box border-top border-right"><span class="box-text"></span></div>
+                    <div class="box border-left"><span class="box-text"></span></div>
+                    <div class="box"><span class="box-text"></span></div>
+                    <div class="box border-right"><span class="box-text"></span></div>
+                    <div class="box border-bottom border-left"><span class="box-text"></span></div>
+                    <div class="box border-bottom"><span class="box-text"></span></div>
+                    <div class="box border-bottom border-right"><span class="box-text"></span></div>
+                </div>
+                <div class="game-info">
+                    <h3>Welcome to tic-tac</h3>
+                    <div class="r">
+                        <span class="info">Tourn for <span class="x">X</span></span>
+                        <button id="reset">Reset</button>
+                    </div>
+                    <div class="img-box">
+                        <img src="img/play-1529_512.gif" alt="image">
+                    </div>
+                </div>
+                <div class="boy-img"><img src="img/boy.png"></div>
+                <div class="good-job-img"><img src="img/well-done-3182_512.gif" class="goodjob-image"></div>
+                <div class="music-audio">
+                    <audio id="audio">
+                        <source src="music/gamemusic.mp3">
+                    </audio>
+                    <button class="button-music" onclick="playpause()" style="width: 73px; height:73px; background:rgba(65, 63, 63, 0.938); border-radius: 50% 50%; border:3px solid white; color:white;">Music</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
