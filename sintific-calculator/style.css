@@ -63,3 +63,26 @@ table {
 .button:hover {
   background-color: rgba(0, 100, 117, 0.938);
 }/*# sourceMappingURL=style.css.map */
+
+//responsive
+@media (max-width:920px){
+   .button{
+    width: 30px;
+    height: 83%;
+    font-size: 17px;
+   }
+   .calculator{
+    width: 46%;
+   }
+   .full-body{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+   }
+}
+@media (max-width:500px){
+    .calculator{
+        width: 65%;
+    }
+}
