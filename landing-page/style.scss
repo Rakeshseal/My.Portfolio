@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box ;
+}
+.logo{
+    width: 20px;
+}
+.navbar{
+    position: static;
+}
+.navigation-cont{
+    position: fixed;
+    z-index: 2;
+}
+.img-1{
+    background-image: url(img/front-page.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    .container{
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 70px;
+        h1{
+            margin-top: 14%;
+        }
+    }
+}
+.img-2{
+    background-image: url(img/google-sim-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    .container{
+        color: #fff;
+        margin-top: 14%;
+        flex-direction: column;
+        
+        gap: 10px;
+        h1{
+            color:#fff;
+        }
+    }
+}
+.img-3{
+    background-image: url(img/galaxy5g-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    .container{
+        flex-direction: column;
+        
+        gap: 10px;
+        h1{
+            padding-top: 40%;
+            color:#333333;
+        }
+    }
+}
+h1:first-child{
+    color: #202020;
+}
+button{
+    width: 300px;
+}
+
+//responsive...
+@media (max-width:920px){
+    .img-3, .img-2{
+        .container h1{
+            color: #fff;
+            padding-top: 30%;
+        }
+    }
+}
