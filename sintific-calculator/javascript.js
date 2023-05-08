@@ -28,7 +28,7 @@ function tan(){
 //     form.textview.value=Math.cot(form.textview.value);
 // }
 function pow(){
-    form.textview.value=Math.pow(form.textview.value, form.textview.value);
+    form.textview.value=Math.pow(form.textview.value, 2);
 }
 function sqrt(){
     form.textview.value=Math.sqrt(form.textview.value,2);
