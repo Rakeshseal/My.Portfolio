@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--css link...-->
+    <link rel="stylesheet" href="style.css">
+    <title>JQuary_project</title>
+</head>
+<body>
+    <div class="gallery">
+
+        <ul class="controls">
+            <li class="buttons active" data-filter="all">all</li>
+            <li class="buttons" data-filter="ice-cream">ice-cream</li>
+            <li class="buttons" data-filter="chocolate">chocolate</li>
+            <li class="buttons" data-filter="cake">cake</li>
+            
+        </ul>
+    
+        <div class="image-container">
+    
+            <a href="https://i.postimg.cc/9F4HXt6t/coold-sweet-ice-cream-with-chocolate.jpg" class="image ice-cream">
+                <img src="https://i.postimg.cc/9F4HXt6t/coold-sweet-ice-cream-with-chocolate.jpg" alt="">
+            </a>
+            <a href="https://i.postimg.cc/bJ64psLB/ice-cream-cone.jpg" class="image ice-cream">
+                <img src="https://i.postimg.cc/bJ64psLB/ice-cream-cone.jpg" alt="">
+            </a>
+            <a href="https://i.postimg.cc/hj3ZNNtF/chocolate-ice-cream-dessert.jpg" class="image ice-cream">
+                <img src="https://i.postimg.cc/hj3ZNNtF/chocolate-ice-cream-dessert.jpg" alt="">
+            </a>
+    
+            <a href="https://i.postimg.cc/m2FZpsgs/chocolate-White-Dark-454384771-770x533-1-650x428.jpg" class="image chocolate">
+                <img src="https://i.postimg.cc/m2FZpsgs/chocolate-White-Dark-454384771-770x533-1-650x428.jpg" alt="">
+            </a>
+            <a href="https://i.postimg.cc/Vvh6rss7/Chocolate-blue-background.jpg" class="image chocolate">
+                <img src="https://i.postimg.cc/Vvh6rss7/Chocolate-blue-background.jpg" alt="">
+            </a>
+    
+            <a href="https://i.postimg.cc/tTwdybQj/download.jpg" class="image cake">
+                <img src="https://i.postimg.cc/tTwdybQj/download.jpg" alt="">
+            </a>
+            <a href="https://i.postimg.cc/7ZnNzj73/download-1.jpg" class="image cake">
+                <img src="https://i.postimg.cc/7ZnNzj73/download-1.jpg" alt="">
+            </a>
+            <a href="https://i.postimg.cc/y6DnGQ4K/image.jpg" class="image cake">
+                <img src="https://i.postimg.cc/y6DnGQ4K/image.jpg" alt="">
+            </a>
+            
+            
+    
+        </div>
+    
+    </div>
+    
+    
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- magnific popup js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    
+    <script>
+    
+        $(document).ready(function(){
+    
+            $('.buttons').click(function(){
+    
+                $(this).addClass('active').siblings().removeClass('active');
+    
+                var filter = $(this).attr('data-filter')
+    
+                if(filter == 'all'){
+                    $('.image').show(400);
+                }else{
+                    $('.image').not('.'+filter).hide(200);
+                    $('.image').filter('.'+filter).show(400);
+                }
+    
+            });
+    
+            $('.gallery').magnificPopup({
+    
+                delegate:'a',
+            type:'image',
+                gallery:{
+                    enabled:true
+                }
+    
+            });
+    
+        });
+    
+    </script>
+</body>
+</html>
