@@ -1,0 +1,330 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.banner{
+   
+    
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5690651260504201) 30%, rgba(0,0,0,0) 100%), url(img/images/banner-bg.jpg);
+    
+    height: 520px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    h1{
+        padding-top: 10%;
+    }
+    .order-button{
+        border-radius: 30px;
+        width: 200px;
+        font-weight: 500;
+    }
+}
+.logo{
+    width: 60px;
+}
+.navbar-nav{
+    position: absolute;
+    right: 0;
+    li:hover{
+        background-color: #e54b13;
+     }
+}
+nav{
+    position: absolute;
+  top: 30px;
+}
+.banner-text{
+    
+    width: 50%;
+}
+.banner-2{
+    height: auto;
+    background-image: url(img/images/banner-2.png);
+    background-size: cover;
+    background-position: center;
+    
+    cursor: pointer;
+    p{
+        color:rgb(255, 119, 0) ;
+    }
+}
+.chef-text{
+    padding-top: 30px;
+    color: rgb(255, 119, 0);
+    
+    p{
+        color: rgb(255, 119, 0);
+        
+    }
+}
+.image-gallery{
+    gap: 30px;
+    img{
+        width: 100px;
+        height: 105px;
+    }
+}
+.banner-3{
+    background-color: #f64b3c;
+    height: auto;
+    img{
+        width: 20%;
+    }
+    .banner-3-text{
+        width: 40%;
+        color: #fff;
+    }
+    .order-button-2{
+        border-radius: 30px;
+        width: 200px;
+        font-weight: 500;
+        color: #f64b3c;
+    }
+    .container{
+        gap:10%;
+        
+    }
+}
+.banner-4{
+    background-image: url(img/images/banner-2.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.banner-4 .container{
+    gap: 10%;
+}
+.banner-4 img{
+    width: 20%;
+    
+}
+.order-button-3{
+    border-radius: 30px;
+    width: 200px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #f64b3c;
+}
+.banner-4-text{
+    width: 40%;
+    
+}
+.banner-5 {
+    background-color: #e54b13;
+    .container{
+        gap:9%;
+    }
+    .static-img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        h1{
+            font-weight:700;
+        }
+    }
+    .banner5-imgs{
+        gap: 9%;
+    }
+    p:first-child{
+        font-size: 9px;
+    }
+}
+
+.banner-6{
+    height: auto;
+    background-image: url(img/images/banner-2.png);
+    color: #e54b13;
+    h5, h6, p{
+        color: #e54b13;
+    }
+    p{
+        font-size: 13px;
+        text-align: center;
+    }
+    .banner6-cards{
+        gap: 10%;
+    }
+    .card{
+        width: 270px;
+        height: 260px;
+        border-radius: 4px;
+        background-color: #fff;
+        border: none;
+        outline: none;
+        .burger-icon{
+            width: 20%;
+        }
+    }
+    .order-button-6{
+        border-radius: 30px;
+        background-color: #f64b3c;
+        color: #fff;
+        font-size: 12px;
+        width: 90%;
+        height: 30%;
+    }
+}
+.banner-7{
+    height: 70vh;
+    background: linear-gradient(180deg, rgb(250, 82, 82) 0%, rgba(248, 59, 59, 0.675) 30%, rgba(239, 88, 88, 0.197) 100%), url(img/images/banner-7-bg.png);
+   background-size: cover;
+   background-position: center;
+   cursor: pointer;
+   p{
+    padding-top: 100px;
+   }
+   h2{font-weight: 700;}
+}
+.banner-8{
+    height: auto;
+    background-image: url(img/images/banner-2.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    h1{
+        color: #e54b13;
+        font-weight: 600;
+        font-size: 47px;
+        text-align: center;
+        
+    }
+    p{
+        color: #e54b13;
+        font-size: 19px;
+        text-align: center;
+    }
+    
+}
+.email-input{
+    
+    width: 350px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 40px 0px 0px 40px;
+    padding-left: 15px;
+    
+}
+.submit{
+    background-color: #e54b13;
+    border: none;
+    outline: none;
+    border-radius: 0px 40px 40px 0px;
+    width: 100px;
+    height: 30px;
+    color: #fff;
+}
+footer{
+    height: auto;
+    color: #fff;
+    .container{
+        gap: 10%;
+    }
+}
+.icons{
+    gap: 7px;
+    img{
+        width: 20px;
+    }
+}
+
+@media (max-width:990px){
+    .email-input{
+        width: 200px;
+        height: 30px;
+    }
+    .banner-text{
+        margin: auto;
+        width: 70%;
+    }
+    .banner-2{
+       .image-gallery{
+        flex-direction: column;
+       } 
+    }
+    .banner-3 .container{
+       flex-direction: column;
+       img{
+        width: 40%;
+       }
+
+       .banner-3-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        p{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+       }
+    }
+    
+    .banner-4 .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        .banner-4-text{
+            text-align: center;
+            width: 80%;
+        }
+        img{
+            width: 40%;
+        }
+    }
+    .static-img{
+        margin: 10px;
+    }
+
+    footer .container{
+        flex-direction: row;
+        
+        
+        .icons{
+            align-items: center;
+            justify-content: center;
+        }
+        p{
+            font-size: 10px;
+        }
+    }
+    .banner-7{
+        height: auto;
+        p{
+            padding-top: 0px;
+        }
+    }
+    nav{
+        border-bottom: 1px solid #d1d1d1f8;
+        
+    }
+    .navbar-nav{
+        width: 40%;
+        height: 240%;
+        background-color: #5d5c5cf0;
+        text-align: center;
+        
+        font-size: 12px;
+        
+    }
+    
+    .close{
+        width: 10%;
+        background: #f64b3c;
+        color: #fff;
+        border: none;
+        outline: none;
+        text-align: center;
+        display: none;
+    }
+   
+}
+
