@@ -12508,7 +12508,7 @@ svg {
      object-fit: cover;
   /* background: center center/cover no-repeat #ddd; */
   transition: 0.3s ease-in-out;
-  border-radius: 12px;
+  border-radius: 4px;
   overflow: hidden;
   margin: 10px 10px;
 }
