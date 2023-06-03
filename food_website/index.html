@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
      
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet">
     <title>Food_Website</title>
 </head>
 <body>
@@ -75,7 +76,7 @@
           </nav>
 
           <!--banner Text-->
-          <div class="banner-text py-5">
+          <div class="banner-text py-5" data-aos="fade-right">
             <h1 class="text-light ">Get Cashback<br> up to 50%</h1>
             <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, sunt. Laudantium, sapiente illum inventore quasi amet obcaecati harum optio placeat, libero vitae ipsa quia aperiam explicabo aspernatur iusto cum dicta.</p>
             <button type="button" class="btn order-button btn-danger">ORDER NOW</button>
@@ -109,8 +110,8 @@
     </div>
     <div class="container-fluid banner-3">
         <div class="container d-flex align-items-center justify-content-center py-5 ">
-             <img src="img/images/burger-img.png">
-             <div class="banner-3-text">
+             <img src="img/images/burger-img.png" data-aos="zoom-in">
+             <div class="banner-3-text" data-aos="fade-left">
                 <h2>Best Burger</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos fugiat voluptatem iste esse molestiae ducimus voluptates.</p>
                 <button type="button" class="btn order-button-2 btn-danger bg-light">ORDER NOW</button>
@@ -121,12 +122,12 @@
     <div class="container-fluid  banner-4">
         <div class="container d-flex align-items-center justify-content-center py-5 ">
              
-             <div class="banner-4-text">
+             <div class="banner-4-text" data-aos="fade-right">
                 <h2>Big Burger</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos fugiat voluptatem iste esse molestiae ducimus voluptates.</p>
                 <button type="button" class="btn order-button-3 btn-danger ">ORDER NOW</button>
              </div>
-             <img src="img/images/burger-img.png">
+             <img src="img/images/burger-img.png" data-aos="zoom-in">
         </div>
     </div>
 
@@ -156,7 +157,7 @@
 
     <!--Banner-6-->
     <div class="container-fluid banner-6">
-        <div class="container d-flex flex-column align-items-center justify-content-center py-5 ">
+        <div class="container d-flex flex-column align-items-center justify-content-center py-5 " data-aos="zoom-in">
              <h2 class="banner6-text">Popular Package</h2>
              
              
@@ -277,6 +278,13 @@
         
        }
        
+    </script>
+    
+    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js">
+    
+    </script>
+    <script>
+      AOS.init();
     </script>
 </body>
 </html>
