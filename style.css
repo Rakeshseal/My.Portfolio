@@ -12756,6 +12756,9 @@ video:hover {
   }
 }
 @media (max-width: 575px) {
+  .gallery{
+    flex-direction: column;
+  }
   .gallery img {
     margin: 8px 6px;
     width: 155px;
@@ -12778,6 +12781,9 @@ video:hover {
   }
 }
 @media screen and (max-width: 575px) {
+  .gallery{
+    flex-direction: column;
+  }
   .my-self-size {
     padding-left: 10px;
   }
@@ -12871,6 +12877,9 @@ video:hover {
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
+  .gallery{
+    flex-direction: column;
+  }
   .bannerText {
     top: 303px;
   }
@@ -12902,6 +12911,9 @@ video:hover {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .gallery{
+    flex-direction: column;
+  }
   .about-me {
     display: block;
   }
